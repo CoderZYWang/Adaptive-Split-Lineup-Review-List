@@ -13,8 +13,6 @@
 		57D5B5631F6FB7CC006277A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57D5B5611F6FB7CC006277A2 /* Main.storyboard */; };
 		57D5B5651F6FB7CC006277A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57D5B5641F6FB7CC006277A2 /* Assets.xcassets */; };
 		57D5B5681F6FB7CC006277A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57D5B5661F6FB7CC006277A2 /* LaunchScreen.storyboard */; };
-		57D5B5711F6FB7D6006277A2 /* LXEvaluationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D5B5701F6FB7D6006277A2 /* LXEvaluationViewController.m */; };
-		57D5B5741F6FBCAC006277A2 /* LXEvaluationTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D5B5731F6FBCAC006277A2 /* LXEvaluationTableHeaderView.m */; };
 		57D5B5771F6FCD69006277A2 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D5B5761F6FCD69006277A2 /* UIView+Frame.m */; };
 /* End PBXBuildFile section */
 
@@ -29,10 +27,6 @@
 		57D5B5641F6FB7CC006277A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57D5B5671F6FB7CC006277A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57D5B5691F6FB7CC006277A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		57D5B56F1F6FB7D6006277A2 /* LXEvaluationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXEvaluationViewController.h; sourceTree = "<group>"; };
-		57D5B5701F6FB7D6006277A2 /* LXEvaluationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXEvaluationViewController.m; sourceTree = "<group>"; };
-		57D5B5721F6FBCAC006277A2 /* LXEvaluationTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXEvaluationTableHeaderView.h; sourceTree = "<group>"; };
-		57D5B5731F6FBCAC006277A2 /* LXEvaluationTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXEvaluationTableHeaderView.m; sourceTree = "<group>"; };
 		57D5B5751F6FCD69006277A2 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		57D5B5761F6FCD69006277A2 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,10 +67,6 @@
 				57D5B55C1F6FB7CC006277A2 /* AppDelegate.m */,
 				57D5B55E1F6FB7CC006277A2 /* ViewController.h */,
 				57D5B55F1F6FB7CC006277A2 /* ViewController.m */,
-				57D5B56F1F6FB7D6006277A2 /* LXEvaluationViewController.h */,
-				57D5B5701F6FB7D6006277A2 /* LXEvaluationViewController.m */,
-				57D5B5721F6FBCAC006277A2 /* LXEvaluationTableHeaderView.h */,
-				57D5B5731F6FBCAC006277A2 /* LXEvaluationTableHeaderView.m */,
 				57D5B5611F6FB7CC006277A2 /* Main.storyboard */,
 				57D5B5641F6FB7CC006277A2 /* Assets.xcassets */,
 				57D5B5661F6FB7CC006277A2 /* LaunchScreen.storyboard */,
@@ -169,8 +159,6 @@
 				57D5B5771F6FCD69006277A2 /* UIView+Frame.m in Sources */,
 				57D5B5601F6FB7CC006277A2 /* ViewController.m in Sources */,
 				57D5B55D1F6FB7CC006277A2 /* AppDelegate.m in Sources */,
-				57D5B5711F6FB7D6006277A2 /* LXEvaluationViewController.m in Sources */,
-				57D5B5741F6FBCAC006277A2 /* LXEvaluationTableHeaderView.m in Sources */,
 				57D5B55A1F6FB7CC006277A2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

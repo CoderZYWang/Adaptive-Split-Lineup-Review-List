@@ -8,8 +8,6 @@
 
 #import "ViewController.h"
 
-#import "LXEvaluationViewController.h"
-
 #import "UIView+Frame.h"
 
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_9_0
@@ -34,14 +32,16 @@ typedef void (^RequestDataHeightBlock)(double height);
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     
-//    [self setCellWithArr:@[@"无知",@"风云变幻",@"施耐庵",@"唉哈哈哈",@"西门吹雪",@"呵呵哒",@"快看看",@"窿窿啦啦",@"一杆禽兽狙",@"合欢花",@"暴走大事件",@"非诚勿扰",@"呵呵呵"] titleFont:FONTSYSTEM(15) borderColor:HEXCOLOR(0xD2D2D2, 1)];
-    
-    
+    __weak typeof(self) weakSelf = self;
     [self setCellWithArr:@[@"无知",@"风云变幻",@"施耐庵",@"唉哈哈哈",@"西门吹雪",@"呵呵哒",@"快看看",@"窿窿啦啦",@"一杆禽兽狙",@"合欢花",@"暴走大事件",@"非诚勿扰",@"呵呵呵"] titleFont:FONTSYSTEM(15) borderColor:HEXCOLOR(0xD2D2D2, 1) requestDataBlock:^(double height) {
         
         
+        // 可以拿到整个结果的行高，下面的视图帮助大家观察
+        UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, MS_SCREEN_WIDTH, height)];
+        view.backgroundColor = [UIColor blueColor];
+        view.alpha = 0.3;
+        [weakSelf.view addSubview:view];
     }];
 }
 
@@ -97,6 +97,8 @@ typedef void (^RequestDataHeightBlock)(double height);
     }
     
     requestDataBlock(maxHeight);
+    
+    NSLog(@"maxHeight --- %.2f", maxHeight);
 }
 
 @end
